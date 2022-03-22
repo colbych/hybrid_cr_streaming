@@ -3,23 +3,95 @@
 
 % Filler text
 \usepackage{blindtext}
+%\newcommand\pp{p_{\rm min}}
 
 % Begin!
 \begin{document}
 
 % Title
-\title{An open source scientific article}
+\title{From Non-Resonant to Resonant Cosmic Ray Driven Instabilities}
 
 % Author list
-\author[0000-0000-0000-0000]{First Author}
+\author[0000-0002-2160-7288]{Colby Haggerty}
+\correspondingauthor{Colby Haggerty}
+\email{colbyh@hawaii.edu}
+\affiliation{Institute for Astronomy, University of Hawaii, Honolulu, HI 96822, USA}
+
+\author[0000-0003-0939-8775]{Damiano Caprioli}
+\affiliation{Department of Astronomy and Astrophysics, University of Chicago, Chicago, IL 60637, USA} 
+%\affiliation{Enrico Fermi Institute, The University of Chicago, Chicago, IL 60637, USA
+
+\author{Ellen G. Zweibel}
+\affiliation{Department of Physics, University of Wisconsin-Madison, Madison, WI 53706, USA}
+%\affiliation{Department of Astronomy, University of Wisconsin-Madison, Madison, WI 53706, USA}
+
 
 % Abstract with filler text
 \begin{abstract}
     \blindtext
 \end{abstract}
 
-% Main body with filler text
-\section{Introduction}
-\Blindtext[4]
+%\section{Analytic} \label{sec:analytic}
+%We consider the dispersion relationship for a plasma composed of 4 different populations: A cold  ion and electron background population, a low density, high energy drifting (CR) ion population and a cold electron population drifting so that there is no net current. The dispersion relationship for this system is discussed in \cite{zweibel03} and is given in the background rest frame as
+%\begin{equation}
+%    (\omega + kv_D)^2 + \omega_{ci}\omega\frac{n_{cr}}{n_i}\zeta_{lr}(k) - k^2v_{Ai}^2 = 0
+%\end{equation}
+%where $\omega_{ci}$ is the gyro-frequency of the background ions, $n_{cr}$ and $n_i$ are the number density of the background and CRs respectively, $v_{A}$ is the Alfv\'en speed and $\zeta_{lr}$ is defined as
+%\begin{equation}
+%    \frac{i\pi}{2}\int_{p_1}^\infty p_1p\phi dp -
+%    \frac{p_1}{4}\mathscr{P} \int_{0}^\infty  \left [ 
+%    (p^2 - p_1^2)\ln \left | \frac{1 \mp p/p_1}{1 \pm p/p_1} \right | \mp 2pp_1 \pm \frac{4}{3}
+%    \frac{p^3}{p_1}
+%    \right ] \frac{d\phi}{dp} dp
+%\end{equation}
+%where $\mathscr{P}$ denotes the principle part of the integral, $p_1 \equiv m_i \omega_{ci}/k$, i.e. the minimum momentum resonant with a wave number of $k$, and $\phi$ is the distribution of CRs, such that $f_{CR} = n_{cr}\phi(p)$ and $\int_0^\infty 4\pi p^2 \phi dp = 1$.  
+%
+%\section{Introduction} \label{sec:intro}
+%Lorem Ipsum
+%
+%\section{Simulations} \label{sec:sims}
+%To investigate these we use the code \emph{dHybridR} (cite to come?) to run relativistic hybrid simulations (kinetic ions/ fluid charge neutralizing electrons).
+%Simulations are quasi-1D but account for the three spatial components of the particle momentum and of the electric and magnetic fields. 
+% Lengths are normalized to the proton skin depth, $c/\omega_p$, where $c$ is the speed of light and $\omega_p\equiv \sqrt{4\pi n_p e^2/m}$ is the proton plasma frequency, with $m$, $e$ and $n_p$ the proton mass, charge and number density.
+%Time is measured in units of inverse proton cyclotron frequency, $\omega_c^{-1}\equiv mc/eB_0$, where $B_0$ is the strength of the initial magnetic field.
+%Velocities are normalized to the Alfv\'en speed $v_A\equiv B/\sqrt{4\pi m n}$, and energies and temperatures are given in units of $mv_A^2$.
+%Fluid electrons are initialized with the same temperature as ions, and have a adiabatic equation of state with an effective index.
+%The computational box measures $[L_x,L_y]=[10^4, 5] c/\omega_p$, with two cells per ion skin depth, An effective speed of light is set to $c/v_A = 100$, which ultimately sets the condition for the simulation time step $\Delta t=0.0025 \omega_c^{-1}$.
+%
+%The simulations are periodic in all directions with two over-lapping populations; a thermal background population and a variable cosmic ray (CR) population with different densities and initial distribution functions.
+%We examine two different distributions of CRs: a "hot" distribution that follows a power law with an index of $-4.5$ drifting with a velocity of $10v_A$ parallel to the magnetic field,
+%
+%\begin{equation}
+%f(p)=\begin{cases}
+%    \frac{3n_{cr}}{8\pi \pp^{3/2}}p^{-4.5}, & p > \pp.\\
+%    0, & \text{otherwise}.
+%\end{cases}
+%\end{equation} 
+%
+%and "beam" distribution that is a Gaussian in momentum space peaked around some beam momentum $p_b$ with a range of positive pitch angels $\mu$ with a linear increase from 0 to 1, $f(p,\mu) = F(p)g(\mu)$ where
+%\begin{equation}
+%F(p) = e^{-(p - p_b)/2\Delta p}
+%\end{equation}
+%
+%\begin{equation}
+%g(\mu)=\begin{cases}
+%    0, & \mu < 0.\\
+%    \frac{1 + \mu}{3/2}, & 0 \geq \mu .
+%\end{cases}
+%\end{equation} 
+
+
+\section{Numeric} \label{sec:numeric}
+Loro
+
+\section{Non-Linear} \label{sec:nonlinear}
+Loro
+
+\section{Conclusion} \label{sec:conclusions}
+Loro
+
+\section{Body} \label{sec:body}
+Loro
+
 
 \end{document}
